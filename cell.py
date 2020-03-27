@@ -12,6 +12,13 @@ class Cell:
 
 		self.is_alive=is_alive
 
+	def resize(self, size_coef):
+		new_width = self.rect.width * size_coef
+		new_height = self.rect.height * size_coef
+
+		self.surf = pygame.Surface((new_width, new_height))
+		
+
 	def draw(self):
 		if self.is_alive==True:
 			self.surf.fill((0,0,0))

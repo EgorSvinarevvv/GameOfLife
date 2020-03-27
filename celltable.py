@@ -23,12 +23,7 @@ class Celltable:
 				x+=width
 			x=0
 			y+=height
-
-	def draw(self):
-		for i in range(len(self.celltable)):
-			for cell in self.celltable[i]:
-				cell.draw()
-
+		
 	def update_cell_status_by_click(self,event_x,event_y):
 		for i in range(len(self.celltable)):
 			for cell in self.celltable[i]:
