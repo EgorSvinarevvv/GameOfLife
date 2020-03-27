@@ -30,6 +30,8 @@ class Main:
 			pygame.draw.line(self.scr, (0, 0, 0), (x - 1, y), (x - 1, y_height))
 			x += int(width)
 
+			
+
 	def mainloop(self):
 		celltable=Celltable(self.scr,self.cells_in_row)
 		while True:
